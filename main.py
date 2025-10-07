@@ -19,8 +19,6 @@ load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 # print(f"DEBUG: Loaded API Key from .env: {api_key}")
 
-# 3. Configure the Gemini API with your key
-# This section was missing from the code you pasted.
 try:
     if not api_key:
         print("ERROR: GOOGLE_API_KEY not found in .env file.")
@@ -29,7 +27,7 @@ except Exception as e:
     print(f"ERROR: Could not configure Gemini API: {e}")
 
 
-# --- Pydantic Models (These are correct) ---
+# --- Pydantic Models ---
 class Difficulty(str, Enum):
     EASY = "easy"
     MEDIUM = "medium"
