@@ -1,0 +1,9 @@
+# Virtual Environment folder
+venv/
+__pycache__/
+
+# Environment variables file (contains secret API key)
+.env
+
+# VS Code specific folder
+.vscode/

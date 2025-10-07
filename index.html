@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Generator</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Generator 🧠</h1>
+      <form id="quiz-form">
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <input type="text" id="topic" value="The Solar System" required />
+        </div>
+        <div class="form-group">
+          <label for="num_questions">Number of Questions:</label>
+          <input
+            type="number"
+            id="num_questions"
+            value="5"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Difficulty:</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <button type="submit" id="generate-btn">Generate Quiz</button>
+      </form>
+
+      <div id="loader" class="loader" style="display: none"></div>
+      <div id="quiz-container"></div>
+      <div id="result-container"></div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
