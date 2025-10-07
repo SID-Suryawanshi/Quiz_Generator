@@ -89,7 +89,3 @@ The project exposes one main API endpoint for creating quizzes.
 | `POST` | `/create-quiz/`  | Generates a new quiz based on the request body.    |
 
 You can interact with the API directly via the auto-generated documentation at `http://127.0.0.1:8000/docs`.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the `LICENSE.md` file for details (optional: you can add a license file if you wish).
